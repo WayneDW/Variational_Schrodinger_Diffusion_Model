@@ -57,6 +57,14 @@ python main.py --problem-name checkerboard --num-itr-dsm 500 --num-stage 200 --f
              --dir check_6x_vsdm_10 --x-scalar 6 --beta-max 10 
 ```
 
+
+<p float="left">
+  <img src="figures/traj_spiral_dsm_10.png" width="270" title="SGM-10"/>
+  <img src="figures/traj_spiral_dsm_20.png" width="270" title="SGM-20" />
+  <img src="figures/spiral_8y_vsdm_10.png" width="270" title="VSDM-10" />
+</p>
+
+
 ### Section 2.2: Generation with fewer number of function evaluations (NFEs)
 
 The current code only support NFE=6 (setting interval 108) and 8 (interval 128).
