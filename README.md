@@ -21,8 +21,8 @@ python main.py --problem-name gaussian --num-stage 20 --forward-net Linear --dir
 <img src="figures/Variational_Schrodinger_diffusion.pdf" width="800">
 
 <p float="left">
-  <img src="figures/Gaussian_Schrodinger_bridge.pdf" width="200" title="Gaussian Schrodinger bridge"/>
-  <img src="figures/Variational_Schrodinger_diffusion.pdf" width="200" title="Variational Schrodinger diffusion" /> 
+  <img src="figures/Gaussian_Schrodinger_bridge.png" width="200" title="Gaussian Schrodinger bridge"/>
+  <img src="figures/Variational_Schrodinger_diffusion.png" width="200" title="Variational Schrodinger diffusion" /> 
 </p>
 
 ## Section 2: Simulation Data (1X on X-axis and 8X on Y-axis)
