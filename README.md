@@ -1,4 +1,4 @@
-# Variational Schrodinger Diffusion (VSD) Models
+# Variational Schrodinger Diffusion Models
 
 ### This version is a stable implementation of the time-invariant variational scores. The time-variant version is studied in another branch.
 
