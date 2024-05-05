@@ -26,6 +26,14 @@ python main.py --problem-name gaussian --num-stage 20 --forward-net Linear --dir
 ## Section 2: Simulation Data (1X on X-axis and 8X on Y-axis)
 
 ### Section 2.1: Generation of Non-isotropic shapes
+
+<p float="left">
+  <img src="figures/traj_spiral_dsm_10.png" width="270" title="SGM-10" />
+  <img src="figures/traj_spiral_dsm_20.png" width="270" title="SGM-20" />
+  <img src="figures/spiral_8y_vsdm_10.png" width="270" title="VSDM-10" />
+</p>
+
+
 #### DSM (beta 10 fails)
 
 ```python
@@ -56,13 +64,6 @@ python main.py --problem-name spiral --num-itr-dsm 500 --num-stage 200 --forward
 python main.py --problem-name checkerboard --num-itr-dsm 500 --num-stage 200 --forward-net Linear   \
              --dir check_6x_vsdm_10 --x-scalar 6 --beta-max 10 
 ```
-
-
-<p float="left">
-  <img src="figures/traj_spiral_dsm_10.png" width="270" title="SGM-10" />
-  <img src="figures/traj_spiral_dsm_20.png" width="270" title="SGM-20" />
-  <img src="figures/spiral_8y_vsdm_10.png" width="270" title="VSDM-10" />
-</p>
 
 
 ### Section 2.2: Generation with fewer number of function evaluations (NFEs)
