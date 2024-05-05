@@ -18,9 +18,11 @@ We set beta-r as 0 to fix the hyperparameters of the VP-SDE. We choose $\zeta=1$
 python main.py --problem-name gaussian --num-stage 20 --forward-net Linear --dir gaussian_vsdm_4 --beta-max 4 --beta-r 0. --interact-coef 1
 ```
 
+<img src="figures/Variational_Schrodinger_diffusion.pdf" width="800">
+
 <p float="left">
-  <img src="figures/Gaussian_Schrodinger_bridge.gif" width="200" title="Gaussian Schrodinger bridge"/>
-  <img src="figures/Variational_Schrodinger_diffusion.gif" width="200" title="Variational Schrodinger diffusion" /> 
+  <img src="figures/Gaussian_Schrodinger_bridge.pdf" width="200" title="Gaussian Schrodinger bridge"/>
+  <img src="figures/Variational_Schrodinger_diffusion.pdf" width="200" title="Variational Schrodinger diffusion" /> 
 </p>
 
 ## Section 2: Simulation Data (1X on X-axis and 8X on Y-axis)
