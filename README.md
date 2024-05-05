@@ -19,7 +19,7 @@ python main.py --problem-name gaussian --num-stage 20 --forward-net Linear --dir
 ```
 
 <p float="left">
-  <img src="figures/Gaussian_Schrodinger_bridge.png" width="400" title="Gaussian Schrodinger bridge"/>
+  <img src="figures/Gaussian_Schrodinger_bridge.png" width="400" title="Gaussian Schrodinger bridge" />
   <img src="figures/Variational_Schrodinger_diffusion.png" width="400" title="Variational Schrodinger diffusion" /> 
 </p>
 
@@ -59,7 +59,7 @@ python main.py --problem-name checkerboard --num-itr-dsm 500 --num-stage 200 --f
 
 
 <p float="left">
-  <img src="figures/traj_spiral_dsm_10.png" width="270" title="SGM-10"/>
+  <img src="figures/traj_spiral_dsm_10.png" width="270" title="SGM-10" />
   <img src="figures/traj_spiral_dsm_20.png" width="270" title="SGM-20" />
   <img src="figures/spiral_8y_vsdm_10.png" width="270" title="VSDM-10" />
 </p>
