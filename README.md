@@ -1,4 +1,4 @@
-# Variational Schrodinger Diffusion Models
+# Variational Schrodinger Diffusion Models (Incomplete version)
 
 ### This version is a stable implementation of the time-invariant variational scores. The time-variant version is studied in the *dynamic_module* branch.
 
