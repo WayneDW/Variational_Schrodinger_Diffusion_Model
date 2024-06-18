@@ -42,7 +42,7 @@ def build_optimizer_ema_sched(opt, policy):
         for name, param in policy.net.named_parameters():
             params = {'params': param}
             if name[0] in ['U', 'V']:
-                params['lr'] = opt.lr_f / 100
+                params['lr'] = opt.lr_f / 5.
             param_list.append(params)
         optimizer = optim_name(param_list, **optim_dict)
     else:
