@@ -1,4 +1,4 @@
-# Variational Schrodinger Diffusion Models (Incomplete version)
+## Variational Schrodinger Diffusion Models (Incomplete version)
 
 #### This version is a stable implementation of the time-invariant variational scores. 
 
