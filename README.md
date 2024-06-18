@@ -1,6 +1,10 @@
 # Variational Schrodinger Diffusion Models (Incomplete version)
 
-### This version is a stable implementation of the time-invariant variational scores. The time-variant version is studied in the *dynamic_module* branch.
+#### This version is a stable implementation of the time-invariant variational scores. 
+
+- The time-dependent version is studied in the *dynamic_module* branch.
+- Applications in time series forecasting are studied in the *time_series* branch.
+- Image experiment reproduction is an ongoing process (TO DO).
 
 ## Installation
 
