@@ -5,6 +5,16 @@
 - *time_series* branch: Applications of VSDM in time series forecasting.
 - *image_data*: Image experiment reproduction (TO DO).
 
+```
+@inproceedings{VSDM,
+  title={Variational Schr\"odinger Diffusion Models},
+  author={Wei Deng and Weijian Luo and Yixin Tan and Marin Bilo\v s and Yu Chen and Yuriy Nevmyvaka and Ricky T. Q. Chen},
+  booktitle={ International Conference on Machine Learning},
+  year={2024}
+}
+```
+
+
 ## Installation
 
 Following the [link](https://github.com/ghliu/SB-FBSDE), we can install the environment `vsd` using [Anaconda](https://www.anaconda.com/products/individual) as follows
