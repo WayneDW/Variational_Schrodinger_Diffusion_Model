@@ -1,6 +1,5 @@
-Train SB
+Train VSDM
 
-TODO
 ```
 python main.py --data solar_nips --seed 1 --batch_size 64 --epochs 20 --forward_opt_steps 200 --backward_opt_steps 200
 ```
