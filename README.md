@@ -1,3 +1,11 @@
+## Installation
+
+requirement: 
+```bash
+gluonts==0.14.3
+pytorchts or pytorchts==0.6.0
+```
+
 Train VSDM
 
 ```
