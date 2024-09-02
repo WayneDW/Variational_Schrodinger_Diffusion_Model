@@ -81,6 +81,39 @@ def get_load_it(load_name):
         return int(nums[-2])
     return int(nums[-1])
 
+
+def compute_axis_limits(array_data, buffer=1.025):
+    return array_data.min() * buffer, array_data.max() * buffer
+
+def data_to_pmf(data, x_min, x_max, y_min, y_max, partitions=100):
+    # Normalize the data to be within [a_min, a_max]
+    data[:, 0] = np.clip(data[:, 0], x_min, x_max)
+    data[:, 1] = np.clip(data[:, 1], y_min, y_max)
+
+    # Compute the bin edges
+    x_bin_edges = np.linspace(x_min, x_max, partitions+1)
+    y_bin_edges = np.linspace(y_min, y_max, partitions+1)
+
+    # Initialize the PMF matrix
+    pmf_matrix = np.zeros((partitions, partitions))
+
+    # Compute the histogram counts for the data points
+    for x, y in data:
+        x_idx = np.digitize(x, x_bin_edges) - 1
+        y_idx = np.digitize(y, y_bin_edges) - 1
+        if x_idx == partitions: x_idx -= 1
+        if y_idx == partitions: y_idx -= 1
+        pmf_matrix[x_idx, y_idx] += 1
+
+    # Normalize the PMF matrix to sum to 1
+    pmf_matrix /= np.sum(pmf_matrix)
+
+    return pmf_matrix
+
+def root_mean_squared_error(pmf1, pmf2):
+    return np.sqrt(np.mean((pmf1 - pmf2)**2))
+
+
 def restore_checkpoint(opt, runner, load_name):
     assert load_name is not None
     print(green("#loading checkpoint {}...".format(load_name)))

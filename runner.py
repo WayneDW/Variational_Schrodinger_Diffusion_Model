@@ -449,6 +449,18 @@ class Runner():
                     util.save_toy_npy_traj(
                         opt, fn, xs.detach().cpu().numpy(), n_snapshot=4, direction=z.direction
                     )
+                    if z.direction == 'forward':
+                        real_data = xs.detach().cpu().numpy()[:, 0, :]
+                    else:
+                        pred_data = xs.detach().cpu().numpy()[:, 0, :]
+
+                x_min, x_max = util.compute_axis_limits(real_data[:, 0])
+                y_min, y_max = util.compute_axis_limits(real_data[:, 1])
+                pmf_real = util.data_to_pmf(real_data, x_min, x_max, y_min, y_max)
+                pmf_pred = util.data_to_pmf(pred_data, x_min, x_max, y_min, y_max)
+                rmse = util.root_mean_squared_error(pmf_real, pmf_pred)
+                print(util.yellow(f"=================== PMF distance={rmse:.2e} ======================"))
+            
             if ckpt:
                 keys = ['z_f','optimizer_f','ema_f','z_b','optimizer_b','ema_b']
                 util.save_checkpoint(opt, self, keys, stage)
