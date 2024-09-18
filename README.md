@@ -3,7 +3,7 @@
 - *main* branch: a stable implementation of time-dependent variational scores.
 - *static_module* branch: implementation of time-invariant variational scores, which is faster.
 - *time_series* branch: Applications of VSDM in time series forecasting.
-- *image_data*: Image experiment reproduction (TO DO).
+- *image* branch: The EDM implementation of both FB-SDE and VSDM of Images.
 
 ```
 @inproceedings{VSDM,
