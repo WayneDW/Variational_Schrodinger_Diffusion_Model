@@ -3,6 +3,7 @@
 requirement: 
 ```bash
 gluonts==0.14.3
+git+https://github.com/zalandoresearch/pytorch-ts.git@version-0.7.0
 pytorchts or pytorchts==0.6.0
 ```
 
